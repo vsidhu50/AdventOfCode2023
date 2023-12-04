@@ -15,7 +15,7 @@ public class Day1
             var num = "";
             foreach (var c in line)
             {
-                if (c >= '0' && c <= '9')
+                if (char.IsDigit(c))
                 {
                     if (num.Length <= 1)
                         num += c;
@@ -83,7 +83,7 @@ public class Day1
             }
             foreach (var c in newLine)
             {
-                if (c > '0' && c <= '9')
+                if (char.IsDigit(c))
                 {
                     if (num.Length <= 1)
                         num += c;
