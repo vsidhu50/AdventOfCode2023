@@ -71,6 +71,6 @@ public class Utilities
 
     public static List<int> GetNums(string input)
     {
-        return input.Split(new string[] { " ", "\t", Environment.NewLine, ",", "\n" }, StringSplitOptions.RemoveEmptyEntries).Select(x => int.Parse(x)).ToList();
+        return input.Split(new string[] { " ", "\t", Environment.NewLine, ",", "\n" }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToList();
     }
 }
